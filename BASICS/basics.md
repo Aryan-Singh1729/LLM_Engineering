@@ -35,14 +35,6 @@ The model uses this context to understand what words mean in the current situati
 
 The model does not remember information in the same way a person does. During a request, it can directly use only the information included in its current context and patterns stored in its trained parameters.
 
-# Context Window
-
-The context window is the maximum amount of text a model can process at one time. Its size is measured in **tokens**, not characters or words. A token may be a whole word, part of a word, punctuation, or another small piece of text.
-
-The context window includes both the input and the generated output. For example, if a model's context window is almost full because of a long prompt and conversation history, less space remains for its answer.
-
-When a conversation or document is larger than the context window, some content must be removed, shortened, summarized, or split into smaller parts. Information outside the active context window cannot directly influence the model's next-token prediction.
-
 # Training Data
 
 Models learn how to make predictions by processing an enormous amount of text, typically pulled from the internet.
